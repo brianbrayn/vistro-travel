@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Vistro Travel Consultancy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  
+
+  <!-- Header -->
+   <header class="bg-[#00A859] text-white py-4 shadow-md">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="Logo (png) - Vistro Travel.png" class="h-12 w-auto">
+      <span class="text-2xl font-bold">The Vistro Travel Consultancy</span>
+    </div>
+  <a href="stu.html">Home</a>
+  <a href="tra.html" class="text-[#FFFFFF] font-medium hover:underline">Vistro Safaris</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+        
+          <!-- Programs Dropdown Button -->
+<div class="relative inline-block text-left">
+  <button id="programsToggle" class="hover:underline inline-flex items-center space-x-1 focus:outline-none">
+    <span>Programs</span>
+    <svg class="w-4 h-4 fill-current transition-transform" id="arrowIcon" viewBox="0 0 20 20">
+      <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
+    </svg>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div id="programsMenu" class="hidden absolute bg-[#Ff6600] text-white text-center py-4 mt-2 py-2 rounded shadow-lg w-44 z-20">
+    <a href="destination.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Destination</a>
+    <a href="destination.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Study Abroad</a>
+    <a href="kenyan eTA Application.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Kenyan eTA Application</a>
+    <a href="passport and visa application.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Passport and Visa Application</a>
+    <a href="corporate.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Corporate Teambuilding</a>
+    <a href="airport transport.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Air Ticket</a>
+    <a href="Counseling services.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Counseling Services</a>
+    <a href="course applicatio.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Course Application</a>
+    <a href="job pacement.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Job Placement</a>
+    <a href="job pa.html" class="block px-4 py-2 hover:bg-[#00A859] hover:text-white transition">Job Placement</a>
+  </div>
+</div>
+<script>
+  const toggleButton = document.getElementById('programsToggle');
+  const menu = document.getElementById('programsMenu');
+  const arrow = document.getElementById('arrowIcon');
+
+  toggleButton.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent the body click from immediately closing the menu
+    menu.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180');
+  });
+
+  // Close menu if clicked outside
+  document.addEventListener('click', (e) => {
+    if (!toggleButton.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add('hidden');
+      arrow.classList.remove('rotate-180');
+    }
+  });
+</script>
+
+        
+             <!-- About Us Dropdown -->
+<div class="relative inline-block text-left">
+  <button id="aboutToggle" class="hover:underline inline-flex items-center space-x-1 focus:outline-none">
+    
+    <a href="about us.html" 
+   class="inline-block bg-[#00A859] text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition">
+   About Us
+</a>
+
+
+    <svg class="w-4 h-4 fill-current transition-transform" id="aboutArrow" viewBox="0 0 20 20">
+    
+
+  <!-- Header -->
+
+      
+    </nav>
+  </div>
+</header>
+
+<!-- Slider (behind header) -->
+<section class="relative h-[500px]">
+  <div class="absolute inset-0 z-0">
+    <div id="slider" class="flex w-full h-full transition-transform duration-1000 ease-in-out">
+      <img src="https://i.pinimg.com/736x/f4/85/ed/f485edaabae2d8781953e293e65c57b7.jpg" class="w-full object-cover" alt="Slide 1">
+      <img src="https://i.pinimg.com/736x/cc/09/19/cc09192fd69342862940cd6ad9aa816c.jpg" class="w-full object-cover" alt="Slide 2">
+      <img src="https://i.pinimg.com/736x/75/a7/57/75a7573576869bb0737085ed6a81b23b.jpg" class="w-full object-cover" alt="Slide 3">
+      <img src="https://i.pinimg.com/736x/6d/97/72/6d9772063422d865fb1fc9e9e66beeb1.jpg" class="w-full object-cover" alt="Slide 4">
+      <img src="https://i.pinimg.com/736x/b3/43/b6/b343b64a9ffd38056debe63135220578.jpg" class="w-full object-cover" alt="Slide 5">
+      <img src="https://i.pinimg.com/736x/be/8c/75/be8c758c00a735c6cf385c1a439adef4.jpg" class="w-full object-cover" alt="Slide 6">
+    </div>
+    <script>
+  <script>
+ <script>
+  const slider = document.getElementById('slider');
+  const slides = slider.children;
+  let index = 0;
+  let slideCount = 0;
+  const maxSlides = 2; // Limit to 2 automatic slides
+
+  function showSlide(i) {
+    slider.style.transform = `translateX(-${i * 100}%)`;
+  }
+
+  function nextSlide() {
+    if (slideCount >= maxSlides) {
+      clearInterval(slideInterval); // stop auto sliding
+      return;
+    }
+
+    index = (index + 1) % slides.length;
+    showSlide(index);
+    slideCount++;
+  }
+
+  const slideInterval = setInterval(nextSlide, 5000); // Auto-slide every 5s
+</script>
+
+
+</script>
+
+
+  </div>
+
+  <!-- Overlay Text -->
+  <div class="relative z-10 flex items-center justify-center h-full text-center text-white bg-black bg-opacity-40">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Work, Learn, and Explore the World</h2>
+      <p class="text-xl">Join thousands of students traveling and working abroad</p>
+      <a href="#programs" id="programBtn" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-2 rounded-full shadow-md hover:bg-blue-100">
+
+<footer class="bg-gray-100 py-4">
+  <div class="max-w-screen-xl mx-auto px-4 text-center">
+    <h3 class="text-lg font-semibold mb-2 text-gray-700">Embark on an Adventure to your Dream Destination:</h3>
+    <div class="flex flex-wrap justify-center items-center gap-4">
+
+      <!-- Flag icons -->
+      <img src="https://flagcdn.com/48x36/ca.png" alt="Canada" title="Canada" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/au.png" alt="Australia" title="Australia" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/nz.png" alt="New Zealand" title="New Zealand" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/gb.png" alt="UK" title="United Kingdom" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/ie.png" alt="Ireland" title="Ireland" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/ae.png" alt="Dubai (UAE)" title="Dubai (UAE)" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/qa.png" alt="Qatar" title="Qatar" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/de.png" alt="Germany" title="Germany" class="w-8 h-6 rounded shadow">
+      <img src="https://flagcdn.com/48x36/us.png" alt="USA" title="United States" class="w-8 h-6 rounded shadow">
+    </div>
+  </div>
+</footer>
+
+
+  
+</a>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-10">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#00A859] text-white text-center py-4">
+          <h4 class="text-xl font-semibold mb-2">Airport Transport</h4>
+          <p class="mb-4">We Help you book flights at competitive prices</p>
+</a>
+
+        </div>
+        <div class="bg-[#00A859] text-white text-center py-4">
+          <h4 class="text-xl font-semibold mb-2">Kenyan eTA Application</h4>
+          <p class="mb-4">We Help you apply for an approved Electronic Travel Authorization</p>
+</a>
+        </div>
+        <div class="bg-[#00A859] text-white text-center py-4">
+          <h4 class="text-xl font-semibold mb-2">Visa Application</h4>
+          <p class="mb-4">We Help you get your travel documents sorted with ease</p>
+</a>
+        </div>
+        <div class="bg-[#00A859] text-white text-center py-4">
+          <h4 class="text-xl font-semibold mb-2">Corporate Teambuilding</h4>
+          <p class="mb-4">We help you organise and design activities for your team.</p>
+</a>
+        </div>
+        <div class="bg-[#00A859] text-white text-center py-4">
+          <h4 class="text-xl font-semibold mb-2">Air Ticketing</h4>
+          <p class="mb-4">We secure payment for your plane seat fast and affordable.</p>
+</a>
+        </div>
+        <div class="bg-[#00A859] text-white text-center py-4">
+          <h4 class="text-xl font-semibold mb-2">Hotel Reservation</h4>
+          <p class="mb-4">We Help you find the best deals in top-rated hotels worldwide.</p>
+           
+</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-[#00A859] text-white text-center py-4">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">About Vistro Travel Consultancy</h3>
+      <p class="text-lg leading-relaxed">
+
+        Vistro Travel Consultancy is a trusted student travel agency offering work and study abroad opportunities
+        . Our mission is to help young people discover the world, gain life-changing experience, 
+        and grow professionally through international travel.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-[#Ff6600] text-white text-center py-4">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-4">Get in Touch</h3>
+      <p class="mb-8">Have questions? Our team is here to help you plan your journey.</p>
+      <form class="grid md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
+        <input type="text" placeholder="Your Name" class="p-3 rounded text-gray-800" required>
+        <input type="email" placeholder="Your Email" class="p-3 rounded text-gray-800" required>
+        <textarea placeholder="Your Message" class="p-3 rounded col-span-2 text-gray-800" rows="4" required></textarea>
+        <button type="submit" class="bg-white text-orange-600 font-semibold px-6 py-3 rounded col-span-2 hover:bg-gray-100">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <section id="services" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-orange-800 mb-10">We also provide Assistance with... </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-[#00A859] text-white text-center py-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Visa Help" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Study Abroad</h3>
+        <p class="text-gray-600">We help you gather documents and apply for student  visas hassle-free.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-[#00A859] text-white text-center py-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Housing" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Scholarship Guidance</h3>
+        <p class="text-gray-600">We help you select and apply for a scholarship.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-[#00A859] text-white text-center py-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/2620/2620501.png" alt="Airport Pickup" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Airport Pickup</h3>
+        <p class="text-gray-600">We offer meet-and-greet services and transport from the airport to your new home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#00A859] text-white text-center py-4">
+    <p>&copy; 2025 Vistro Travel Consultancy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

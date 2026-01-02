@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vistro Travels Consultancy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f4f8;
+      color: #333;
+    }
+
+    .back-button {
+      margin: 1rem;
+    }
+
+    .back-button a {
+      background: #00A859;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-button a:hover {
+      background: #007a43;
+    }
+
+    header {
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 60px;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?beach,vacation') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 6px #000;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #0083b0;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #FFA500;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e69500;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-button">
+    <a href="stu.html">← Back</a>
+  </div>
+
+  <header>
+    <h1>Vistro Travels Consultancy</h1>
+    <img src="https://i.pinimg.com/736x/ed/47/8d/ed478dfed6bab14d75238f441f991add.jpg" alt="Airplane Icon" />
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    Explore the World With Us
+  </div>
+
+  <section class="section" id="gallery">
+    <h2>Travel Highlights</h2>
+    <div class="cards">
+      <div class="card"><img src="https://i.pinimg.com/736x/0e/c0/34/0ec03416242e09513aeed61edd03c88f.jpg" alt="Highlight 1"></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/24/60/6c/24606c16e25e5c5005a655f56a219e86.jpg" alt="Highlight 2"></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/b4/a3/38/b4a338277cb28b7264d6516568ba3fc1.jpg" alt="Highlight 3"></div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/75/a7/57/75a7573576869bb0737085ed6a81b23b.jpg" alt="Visa Assistance">
+        <div class="card-content">
+          <h3>Visa Assistance</h3>
+          <p>We help you get your travel documents sorted with ease.</p>
+          <a href="passport and visa application.html" class="button">Apply for Visa</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/44/e0/0b/44e00be23bcfe07e27ce07bd6b9b9a0e.jpg" alt="Hotel Booking">
+        <div class="card-content">
+          <h3>Hotel Booking</h3>
+          <p>Find the best deals in top-rated hotels worldwide.</p>
+          <a href="hotel booking.html" class="button">Book hotel</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/eb/07/55/eb075597c404ecd36e3adb8e82e771fc.jpg" alt="Flight Booking">
+        <div class="card-content">
+          <h3>Flight Booking</h3>
+          <p>Book domestic and international flights at competitive prices.</p>
+          <a href="flight booking.html" class="button">Book a flight</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/e0/c6/89/e0c689469da61a92283e1fc5670c0dad.jpg" alt="Work Visa">
+        <div class="card-content">
+          <h3>Work Visa</h3>
+          <p>We help you secure a job abroad.</p>
+          <a href="#contact" class="button">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/cf/cd/ef/cfcdeff885c46be33a5e70b0b79cd66f.jpg" alt="Dubai">
+        <div class="card-content">
+          <h3>Dubai</h3>
+          <p>The city of lights awaits you with its romance and beauty.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/c7/9a/8f/c79a8ffab9c4622556bef6c614e54710.jpg" alt="Qatar">
+        <div class="card-content">
+          <h3>Qatar</h3>
+          <p>Relax on pristine beaches and explore tropical landscapes.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/f7/86/b4/f786b4443430e626411f325d87c7a7de.jpg" alt="Czech Republic">
+        <div class="card-content">
+          <h3>Czech Republic</h3>
+          <p>Discover the fast-paced life and iconic sights of Europe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+      📞 +254 7123456789 &nbsp; | &nbsp; ✉️ info@vistrotravels.com
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Vistro Travels. All rights reserved.
+  </footer>
+
+</body>
+</html>

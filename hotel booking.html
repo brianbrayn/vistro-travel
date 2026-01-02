@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dubai Hotels - Vistro Travels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #0083b0;
+    }
+
+    .hotel-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .hotel-card:hover {
+      transform: scale(1.03);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .hotel-content {
+      padding: 1rem;
+    }
+
+    .hotel-content h3 {
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      color: #FFA500;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #FFA500;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e69500;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-button a {
+      background: #00A859;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-button a:hover {
+      background: #007a43;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .hotel-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Book Hotels in Dubai</h1>
+    <p>Find your perfect stay in the City of Gold</p>
+  </header>
+
+  <section class="section">
+    <h2>Featured Dubai Hotels</h2>
+    <div class="hotel-cards">
+
+      <div class="hotel-card">
+        <img src="Dubai.jpg">
+        <div class="hotel-content">
+          <h3>Burj Al Arab</h3>
+          <p>Luxury iconic hotel with ocean views and world-class service.</p>
+          <div class="price">From $1,200/night</div>
+          <a href="bookings for hotel.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="at.jpg">
+        <div class="hotel-content">
+          <h3>Atlantis The Palm</h3>
+          <p>Waterpark access, stunning beaches, and undersea suites.</p>
+          <div class="price">From $400/night</div>
+          <a href="bookings for hotel.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="Dubai sea aesthetic wallpaper.jpg">
+        <div class="hotel-content">
+          <h3>Jumeirah Beach Hotel</h3>
+          <p>Family-friendly resort with private beach and fine dining.</p>
+          <div class="price">From $350/night</div>
+          <a href="bookings for hotel.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="Onde ficar em Dubai_ Rove Downtown com vista para o Burj Khalifa.jpg">
+        <div class="hotel-content">
+          <h3>Rove Downtown</h3>
+          <p>Affordable and stylish stay near Burj Khalifa and Dubai Mall.</p>
+          <div class="price">From $120/night</div>
+          <a href="bookings for hotel.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="back-button">
+      <a href="tra.html">Back to Home</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vistro Travels. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Bookings - Vistro Travels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #0083b0;
+    }
+
+    .hotel-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .hotel-card:hover {
+      transform: scale(1.03);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .hotel-content {
+      padding: 1rem;
+    }
+
+    .hotel-content h3 {
+      margin: 0.5rem 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #FFA500;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e69500;
+    }
+
+    .back-button {
+      margin: 1rem;
+    }
+
+    .back-button a {
+      background: #00A859;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-button a:hover {
+      background: #007a43;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .hotel-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-button">
+    <a href="tra.html">← Back to Home</a>
+  </div>
+
+  <header>
+    <h1>Book your Flight</h1>
+    <p>Choose your airline for your destination.</p>
+  </header>
+
+  <section class="section">
+    <h2>Featured Airline Flights</h2>
+    <div class="hotel-cards">
+
+      <div class="hotel-card">
+        <img src="5Y-KZE _ Boeing 787-8 Dreamliner _ Kenya Airways _ Alexandre Fazan _ JetPhotos.jpg">
+        <div class="hotel-content">
+          <h3>Kenya Airways</h3>
+          <p>Fly to 50+ destinations across the world with KQ and enjoy a World-Class Travel Experience with African Hospitality.</p>
+          <a href="bookings.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="Qatar Airways Orders 34 Boeing 777-8 Freighters; Indicators MOU for 25 737-10s.jpg">
+        <div class="hotel-content">
+          <h3>Qatar Airways</h3>
+          <p>Explore the world with us to experience award-winning service and renowned hospitality.</p>
+          <a href="bookings.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="Airbus A380-800 passenger jet.jpg">
+        <div class="hotel-content">
+          <h3>Fly Emirates</h3>
+          <p>Book flights across the world and Fly Better with Emirates. Explore our global routes and find the best fares.</p>
+          <a href="bookings.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="Jambojet.jpg">
+        <div class="hotel-content">
+          <h3>Jambojet</h3>
+          <p>Discover affordable flights to top destinations across Kenya and East Africa.</p>
+          <a href="bookings.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="B19.jpg">
+        <div class="hotel-content">
+          <h3>Fly 540</h3>
+          <p>Fly540 is a Kenyan low-cost airline operating across East Africa.</p>
+          <a href="bookings.html" class="button">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="back-button" style="text-align:center; margin-bottom:2rem;">
+    <a href="tra.html">Back to Home</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Vistro Travels. All rights reserved.
+  </footer>
+
+</body>
+</html>
